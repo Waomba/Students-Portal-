@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Website</title>
+ <link rel="stylesheet" href="Student Portal.css">
+</head>
+<body>
+<section>
+    <div class="sidebar">
+        <div class="toggle-btn" id="toggle-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="dashboard.html">dashboard</a></li>
+                <li><a href="courses.html">courses</a></li>
+                <li><a href="acount.html">account</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="accessib.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </div>
+  </section>
+  <div class="accessibility-menu" id="accessibility-menu">
+    <div class="menu-item">
+      <label for="language">Language</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+        <option value="ny">Chichewa</option>
+      </select>
+    </div>
+    <div class="menu-item">
+      <label for="font-size">Font Size</label>
+      <input type="range" id="font-size" min="80" max="200" value="100" step="10">
+    </div>
+    <div class="menu-item">
+      <label for="line-height">Line Height</label>
+      <input type="range" id="line-height" min="1" max="2" value="1.5" step="0.1">
+    </div>
+    <div class="menu-item">
+      <label for="font-weight">Font Weight</label>
+      <select id="font-weight">
+        <option value="normal">Normal</option>
+        <option value="bold">Bold</option>
+        <option value="lighter">Lighter</option>
+      </select>
+    </div>
+    <button class="theme-button" id="theme-button">Dark Mode</button>
+  </div>
+
+  <div class="main-content" id="main-content">
+    <h1>Welcome to the Accessible Website</h1>
+    <p>This is a sample website with an accessibility menu that allows users to customize the content to their preferences.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut risus in augue luctus venenatis. Sed feugiat, magna et interdum commodo, nunc neque varius nunc, quis convallis nisi quam sit amet tortor. Nullam eget ex et enim molestie porttitor. Sed eget risus nec lorem tincidunt efficitur.</p>
+  </div>
+
+  <button class="accessibility-button" id="accessibility-button">Accessibility Options</button>
+
+</body>
+<script src="Student Portal.js"></script>
+<script src="accessibility.js"></script>
+</html>
